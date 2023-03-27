@@ -1,0 +1,140 @@
+*{
+    font-family: cursive,sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+#todo-list {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+@media(max-width:550px) {
+    #todo-list {
+        width: 86%;
+    } 
+}
+#todo-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#todo-input {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: none;
+    margin-right: 10px;
+}
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: lightblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#tasks div {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    background-color: lightgray;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#tasks div span {
+    padding: 10px;
+    background-color: lightblue;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: right;
+    font-size: 18px;
+}
+#tasks div span:hover,button[type="submit"]:hover,.clear:hover,.mode:hover {
+    background-color: cadetblue;
+    transition: 0.2s;
+}
+.delall,.clear {
+    padding: 10px;
+    background-color: lightblue;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: right;
+    font-size: 14px;
+    margin-left: 5px;
+}
+.done {
+    opacity: 0.5;
+}
+.clear {
+   
+    border: none;
+    margin: auto;
+}
+.container {
+    width: 100%;
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+}
+.calculator {
+    background-color: #3a4452;
+    padding: 20px;
+    border-radius: 10px;
+}
+.calculator form input {
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin: 3px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+form .display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+form .display input {
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+form input.equal {
+    width: 46%;
+}
+form input.operator {
+    color: #33ffd8;
+
+}
+.mode {
+    bottom: 17px;
+    right: 17px;
+    padding: 10px;
+    background-color: lightblue;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    position: fixed;
+    border: none;
+}
+
+.body-mode {
+    background-color: #022c43;
+    color: #fff;
+}
+.list-mode {
+    color: #2f2c2c !important;
+}
